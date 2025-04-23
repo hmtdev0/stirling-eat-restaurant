@@ -1,0 +1,441 @@
+* {
+    font-family: 'Fjalla One', arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    padding: 50px 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+}
+
+
+
+/* header */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    box-shadow: 4px 4px 4px 0 rgb(0, 0, 0, .2);
+    width: 100%;
+}
+
+.btn.btn-primary {
+    background-color: rgb(111, 82, 67);
+    color: #ffffff;
+    padding: 10px;
+    border-color: rgb(111, 82, 67);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: rgb(111, 82, 67);
+
+}
+
+.header .logo {
+    text-align: center;
+    color: rgb(111, 82, 67);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header .navbar .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header .navbar .nav-list li .nav-link {
+    padding: .5rem 1rem;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(17, 17, 17);
+}
+
+.header .navbar .nav-list li .nav-link.active {
+    font-weight: 600;
+}
+
+.header .contact-number strong a {
+    color: rgb(17, 17, 17);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 15px;
+}
+
+
+/* banner */
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Center the element */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner .content .banner-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner .content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banner .content .btn-primary {
+    box-shadow: none;
+    background-color: #ffffff;
+    border-radius: 0;
+    color: rgb(17, 17, 17);
+    border-color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.banner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.banner .banner-img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: fill; */
+}
+
+
+/* media queries for banner */
+@media(max-width:768px) {
+
+    /* banner */
+    .banner {
+        height: 300px;
+    }
+}
+
+
+
+
+/* prices */
+.prices .price-card {
+    position: relative;
+}
+
+.prices .price-card .card-body .card-text {
+    font-size: 15px;
+}
+
+.prices .price-card .card-body .card-text strong {
+    color: #f8c71d;
+}
+
+/* lunch card */
+.prices .price-card.lunch .card-body .card-text strong {
+    color: rgb(111, 82, 67);
+}
+
+
+/* dinner card */
+.prices .price-card.dinner {
+    background-color: rgb(111, 82, 67);
+}
+
+.prices .price-card.dinner .card-body .card-title {
+    color: #f8c71d;
+}
+
+.prices .price-card.dinner .card-body .card-text {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.prices .price-card.dinner .card-body .btn-primary {
+    color: rgb(111, 82, 67);
+    border-color: #ffffff;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+/* all day card */
+.prices .price-card.all-day {
+    background-color: rgb(32, 32, 32);
+}
+
+.prices .price-card.all-day .card-body .card-title {
+    color: #f8c71d;
+}
+
+.prices .price-card.all-day .card-body .card-text {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.prices .price-card.all-day .card-body .btn-primary {
+    color: rgb(32, 32, 32);
+    border-color: #f8c71d;
+    background-color: #f8c71d;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+
+
+.prices .price-card .card-body .card-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.prices .price-card.lunch .card-body .card-title {
+    color: rgb(111, 82, 67);
+}
+
+
+
+
+/* opening hours */
+.opening-hours {
+    position: relative;
+}
+
+.opening-hours .oh-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.opening-hours .oh-card .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.opening-hours .timing {
+    z-index: 100;
+    position: relative;
+}
+
+.opening-hours .timing-card .card-title {
+    font-size: 25px;
+    color: #f8c71d;
+    font-weight: 700;
+}
+
+.opening-hours .timing-card .day-text {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.opening-hours .timing-card .text {
+    color: #c4c4c4;
+    margin: 3px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reviews */
+.reviews {
+    position: relative;
+    background-color: #ecebeb93;
+}
+
+.reviews .container .row .card .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.reviews .container .row .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.reviews .container .row .card .card-body p {
+    font-size: 13px;
+}
+
+.reviews .container .row .card .card-body .reviews-by {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.reviews .container .row .card .card-body .reviews-by .card-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* contact form */
+.form-control {
+    box-shadow: none !important;
+}
+
+input.form-control {
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 12px;
+}
+
+textarea.form-control {
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 15px;
+}
+
+
+input.form-control:focus {
+    border-color: rgb(111, 82, 67);
+}
+
+textarea.form-control:focus {
+    border-color: rgb(111, 82, 67);
+}
+
+
+.contact-form .btn-primary.form-control {
+    background-color: rgb(111, 82, 67);
+    padding: 10px;
+    border-color: rgb(111, 82, 67);
+}
+
+.contact-title {
+    font-size: 15px;
+    color: rgb(111, 82, 67);
+}
+
+.contact-text {
+    font-size: 15px;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+
+
+/* footer */
+.footer {
+    background-color: rgb(111, 82, 67);
+    color: #ffffff;
+}
+
+.footer .container {
+    padding: 30px 30px;
+}
+
+.footer .footer-text {
+    font-size: 15px;
+}
+
+.footer .footer-link {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+/* toggle bar */
+#toggle-bar {
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+
+    .header {
+        padding: 25px;
+    }
+
+    /* navbar */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: block;
+        background-color: #ffffff !important;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        z-index: 999;
+        border-top: 1px solid rgb(111, 82, 67);
+        overflow: hidden;
+    }
+
+    .navbar .nav-list {
+        display: block !important;
+    }
+
+    .navbar .nav-list li .nav-link {
+        border-bottom: 1px solid rgb(111, 82, 67);
+        display: block;
+
+    }
+
+    .navbar .nav-list li .nav-link:hover {
+        transition: ease .3s;
+        background-color: rgb(111, 82, 67);
+        color: #ffffff;
+    }
+
+
+    /* toggle bar block */
+    #toggle-bar {
+        display: inline !important;
+    }
+}
